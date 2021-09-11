@@ -1,0 +1,25 @@
+-- There's a macos installation script now!
+-- curl https://raw.githubusercontent.com/tidalcycles/tidal-bootstrap/master/tidal-bootstrap.command -sSf | sh
+-- Works extremely well.
+-- Just make sure speakers and mic have the same Hz format in the "Audio MIDI Setup" MacOS app.
+
+-- Set cps to be a fast house beat
+setcps (130/60/4)
+
+hush
+
+-- fun dark little half speed jam
+
+d1 $ note "<c a f e>"
+   # octave 2
+   # sound "supersaw"
+   # lpf "500 1000 1500"
+   # lpq 0.5
+  
+d2 $ "[hh*3] hh*15"
+
+d3 $ s "bd ~*3"
+
+d4 $ s "~ <cp cp cp cp*6>"
+
+
