@@ -10,6 +10,8 @@ hush
 
 -- fun dark little half speed jam
 
+unsolo 1
+
 d1 $ note "<c a f e>"
    # octave 2
    # sound "supersaw"
@@ -22,4 +24,13 @@ d3 $ s "bd ~*3"
 
 d4 $ s "~ <cp cp cp cp*6>"
 
+d5 $ sound "stab:1 <stab:10*4 stab:14> stab:13"
+   # octave "<4 6>"
 
+-- more stuff
+
+d1 $ s "cpu2:2(5,8)"
+
+d1 $ sound "cpu:0 cpu:2 cpu:4 cpu:6 cpu:0 cpu:2 cpu:6 cpu:8"
+
+d1 $ sound "lo hi lo [hi hi]"
